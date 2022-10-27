@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  padding: 0;
+}
+
+#root{
+	width: 100%;
+}
+
+.app_wrap{
+	display: flex;
+	width: 100%;
+}
+
+#quote-box{
+	margin: 10% auto;
+	padding: 2%;
+	max-width: 75%;
+	border-radius: .5em;
+}
+
+#text{
+	font-size: 2em;
+	text-align: center;
+}
+
+#author{
+	text-align: right;
+	padding: 1.4em;
+}
+
+.init{
+	opacity: 0;
+}
+
+
+ 
+.buttons{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+#loading_bar {
+	width: 30px;
+	height: 30px;
+
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	
+
+	-moz-animation-name: spin;
+	-moz-animation-duration: 4s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	
+	-ms-animation-name: spin;
+	-ms-animation-duration: 4s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	
+	animation-name: spin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+@keyframes spin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+#gemWrap {
+	width: 33px;
+}
+
+.gem{
+	transition: top 1s ease;
+	position: absolute;
+	width: 30px;  
+	z-index: 1;
+} 
+
+.longFade{
+	transition: opacity 1s ease-out .5s;
+	opacity: 100;
+}
+
+.fadeIN{
+	transition: opacity .5s ease-in;
+	opacity: 100;
+}
+
+.fadeOUT{
+	transition: opacity 1.8s ease-out;
+	opacity: 0;
+}
+
+#twitter{
+	width: 25px;
+	color: cornflowerblue;
+}
+
